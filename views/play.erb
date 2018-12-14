@@ -1,8 +1,8 @@
-<%= player_1 %> vs. <%= player_2 %><br>
+<%= @player_1.name %> vs. <%= @player_2.name %><br>
 <br>
-<%= player_2 %>: 60/60hp<br>
+<%= @player_1.name %>: <%= @player_1.hit_points%>/60hp
+<%= @player_2.name %>: <%= @player_2.hit_points%>/60hp
 <br>
-<%= player_1 %>: 60/60hp<br>
 <br>
 <br>
 <a href="/attack">Attack</a>
