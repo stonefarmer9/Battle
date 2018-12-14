@@ -19,6 +19,15 @@ class Battle < Sinatra::Base
        player_2: session[:player_2_name],
     }
   end
+
+
+  get '/attack' do
+    erb :attack, locals: {
+    player_1: session[:player_1_name],
+    player_2: session[:player_2_name],
+ }
+  end
+
   run! if app_file == $0
 
 end
